@@ -11,15 +11,16 @@ import Unbox
 
 class ViewController: UIViewController {
 
+	private let viewModel = CalendarViewModel()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
+		viewModel.getCalendarData()
 	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
-
-
 }
-

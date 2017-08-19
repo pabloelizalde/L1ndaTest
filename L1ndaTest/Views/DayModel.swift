@@ -10,17 +10,17 @@ import Foundation
 import Unbox
 
 struct DayModel: Unboxable {
-	
+
 	let date: String
 	let season: String
-	let season_week: Int
+	let seasonWeek: Int
 	let celebrations: [CelebrationModel]
 	let weekday: String
-	
+
 	init(unboxer: Unboxer) throws {
 		date = try unboxer.unbox(key: "date")
 		season = try unboxer.unbox(key: "season")
-		season_week = try unboxer.unbox(key: "season_week")
+		seasonWeek = try unboxer.unbox(key: "season_week")
 		celebrations = try unboxer.unbox(key: "celebrations")
 		weekday = try unboxer.unbox(key: "weekday")
 	}

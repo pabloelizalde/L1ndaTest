@@ -10,16 +10,16 @@ import Foundation
 import Unbox
 
 struct CelebrationModel: Unboxable {
-	
+
 	let title: String
 	let colour: String
 	let rank: String
-	let rank_num: Double
-	
+	let rankNum: Double
+
 	init(unboxer: Unboxer) throws {
 		title = try unboxer.unbox(key: "title")
 		colour = try unboxer.unbox(key: "colour")
 		rank = try unboxer.unbox(key: "rank")
-		rank_num = try unboxer.unbox(key: "rank_num")
+		rankNum = try unboxer.unbox(key: "rank_num")
 	}
 }

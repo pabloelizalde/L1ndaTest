@@ -6,7 +6,8 @@ target 'L1ndaTest' do
   use_frameworks!
 
   # Pods for L1ndaTest
-  pod "Unbox"
+  pod 'Unbox'
+  pod 'SwiftLint'
 
   target 'L1ndaTestTests' do
     inherit! :search_paths
