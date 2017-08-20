@@ -45,7 +45,8 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+
+Pods/
 
 # Carthage
 #
@@ -65,3 +66,129 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+Pods/Manifest.lock
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/SwiftLint/LICENSE
+Pods/SwiftLint/swiftlint
+Pods/SwiftLint/SwiftLintFramework.framework/Resources
+Pods/SwiftLint/SwiftLintFramework.framework/SwiftLintFramework
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/Current
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/SwiftLintFramework
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/libswiftCore.dylib
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/libswiftCoreGraphics.dylib
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/libswiftDarwin.dylib
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/libswiftDispatch.dylib
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/libswiftFoundation.dylib
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/libswiftIOKit.dylib
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/libswiftObjectiveC.dylib
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Commandant.framework/Commandant
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Commandant.framework/Resources
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Commandant.framework/Versions/Current
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Commandant.framework/Versions/A/Commandant
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Commandant.framework/Versions/A/Resources/Info.plist
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Result.framework/Resources
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Result.framework/Result
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Result.framework/Versions/Current
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Result.framework/Versions/A/Result
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Result.framework/Versions/A/Resources/Info.plist
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SourceKittenFramework.framework/Resources
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SourceKittenFramework.framework/SourceKittenFramework
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SourceKittenFramework.framework/Versions/Current
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SourceKittenFramework.framework/Versions/A/SourceKittenFramework
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SourceKittenFramework.framework/Versions/A/Resources/Info.plist
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SwiftyTextTable.framework/Resources
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SwiftyTextTable.framework/SwiftyTextTable
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SwiftyTextTable.framework/Versions/Current
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SwiftyTextTable.framework/Versions/A/SwiftyTextTable
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SwiftyTextTable.framework/Versions/A/Resources/Info.plist
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SWXMLHash.framework/Resources
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SWXMLHash.framework/SWXMLHash
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SWXMLHash.framework/Versions/Current
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SWXMLHash.framework/Versions/A/SWXMLHash
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/SWXMLHash.framework/Versions/A/Resources/Info.plist
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Yams.framework/Resources
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Yams.framework/Yams
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Yams.framework/Versions/Current
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Yams.framework/Versions/A/Yams
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Frameworks/Yams.framework/Versions/A/Resources/Info.plist
+Pods/SwiftLint/SwiftLintFramework.framework/Versions/A/Resources/Info.plist
+Pods/Target Support Files/Pods-L1ndaTest/Info.plist
+Pods/Target Support Files/Pods-L1ndaTest/Pods-L1ndaTest-acknowledgements.markdown
+Pods/Target Support Files/Pods-L1ndaTest/Pods-L1ndaTest-acknowledgements.plist
+Pods/Target Support Files/Pods-L1ndaTest/Pods-L1ndaTest-dummy.m
+Pods/Target Support Files/Pods-L1ndaTest/Pods-L1ndaTest-frameworks.sh
+Pods/Target Support Files/Pods-L1ndaTest/Pods-L1ndaTest-resources.sh
+Pods/Target Support Files/Pods-L1ndaTest/Pods-L1ndaTest-umbrella.h
+Pods/Target Support Files/Pods-L1ndaTest/Pods-L1ndaTest.debug.xcconfig
+Pods/Target Support Files/Pods-L1ndaTest/Pods-L1ndaTest.modulemap
+Pods/Target Support Files/Pods-L1ndaTest/Pods-L1ndaTest.release.xcconfig
+Pods/Target Support Files/Pods-L1ndaTestTests/Info.plist
+Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests-acknowledgements.markdown
+Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests-acknowledgements.plist
+Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests-dummy.m
+Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests-frameworks.sh
+Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests-resources.sh
+Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests-umbrella.h
+Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests.debug.xcconfig
+Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests.modulemap
+Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests.release.xcconfig
+Pods/Target Support Files/Pods-L1ndaTestUITests/Info.plist
+Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests-acknowledgements.markdown
+Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests-acknowledgements.plist
+Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests-dummy.m
+Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests-frameworks.sh
+Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests-resources.sh
+Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests-umbrella.h
+Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests.debug.xcconfig
+Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests.modulemap
+Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests.release.xcconfig
+Pods/Target Support Files/Unbox/Info.plist
+Pods/Target Support Files/Unbox/Unbox-dummy.m
+Pods/Target Support Files/Unbox/Unbox-prefix.pch
+Pods/Target Support Files/Unbox/Unbox-umbrella.h
+Pods/Target Support Files/Unbox/Unbox.modulemap
+Pods/Target Support Files/Unbox/Unbox.xcconfig
+Pods/Unbox/LICENSE
+Pods/Unbox/README.md
+Pods/Unbox/Sources/Array+Unbox.swift
+Pods/Unbox/Sources/Bool+Unbox.swift
+Pods/Unbox/Sources/CGFloat+Unbox.swift
+Pods/Unbox/Sources/Data+Unbox.swift
+Pods/Unbox/Sources/DateFormatter+Unbox.swift
+Pods/Unbox/Sources/Decimal+Unbox.swift
+Pods/Unbox/Sources/Dictionary+Unbox.swift
+Pods/Unbox/Sources/Double+Unbox.swift
+Pods/Unbox/Sources/Float+Unbox.swift
+Pods/Unbox/Sources/Int+Unbox.swift
+Pods/Unbox/Sources/Int32+Unbox.swift
+Pods/Unbox/Sources/Int64+Unbox.swift
+Pods/Unbox/Sources/JSONSerialization+Unbox.swift
+Pods/Unbox/Sources/NSArray+Unbox.swift
+Pods/Unbox/Sources/NSDictionary+Unbox.swift
+Pods/Unbox/Sources/Optional+Unbox.swift
+Pods/Unbox/Sources/Sequence+Unbox.swift
+Pods/Unbox/Sources/Set+Unbox.swift
+Pods/Unbox/Sources/String+Unbox.swift
+Pods/Unbox/Sources/Typealiases.swift
+Pods/Unbox/Sources/UInt+Unbox.swift
+Pods/Unbox/Sources/UInt32+Unbox.swift
+Pods/Unbox/Sources/UInt64+Unbox.swift
+Pods/Unbox/Sources/Unbox.swift
+Pods/Unbox/Sources/Unboxable.swift
+Pods/Unbox/Sources/UnboxableByTransform.swift
+Pods/Unbox/Sources/UnboxableCollection.swift
+Pods/Unbox/Sources/UnboxableEnum.swift
+Pods/Unbox/Sources/UnboxableKey.swift
+Pods/Unbox/Sources/UnboxableRawType.swift
+Pods/Unbox/Sources/UnboxableWithContext.swift
+Pods/Unbox/Sources/UnboxArrayContainer.swift
+Pods/Unbox/Sources/UnboxCollectionElementTransformer.swift
+Pods/Unbox/Sources/UnboxCompatible.swift
+Pods/Unbox/Sources/UnboxContainer.swift
+Pods/Unbox/Sources/Unboxer.swift
+Pods/Unbox/Sources/UnboxError.swift
+Pods/Unbox/Sources/UnboxFormatter.swift
+Pods/Unbox/Sources/UnboxPath.swift
+Pods/Unbox/Sources/UnboxPathError.swift
+Pods/Unbox/Sources/UnboxPathNode.swift
+Pods/Unbox/Sources/URL+Unbox.swift
