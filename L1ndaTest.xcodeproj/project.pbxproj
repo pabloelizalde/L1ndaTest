@@ -10,17 +10,21 @@
 		6C08A249E93FA1E14FD84EC3 /* Pods_L1ndaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3D8B1ABD0D3A249160400E /* Pods_L1ndaTestTests.framework */; };
 		8B5099927CDE9EC37C6E8AF5 /* Pods_L1ndaTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204954B9FCAC354658EFA6A3 /* Pods_L1ndaTestUITests.framework */; };
 		DE0A72B99D8C60B8E8C3F248 /* Pods_L1ndaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC16E23305891EA26596FE0 /* Pods_L1ndaTest.framework */; };
+		DF0B8FFB1F49917B00738E34 /* ViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B8FFA1F49917B00738E34 /* ViewControllerManager.swift */; };
+		DF0B8FFE1F49952500738E34 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B8FFD1F49952500738E34 /* URLExtension.swift */; };
 		DF52DAEF1F46CD75005B1D4E /* L1ndaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DAEE1F46CD75005B1D4E /* L1ndaTestTests.swift */; };
 		DF52DAFA1F46CD75005B1D4E /* L1ndaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DAF91F46CD75005B1D4E /* L1ndaTestUITests.swift */; };
 		DF52DB131F46D075005B1D4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DB081F46D075005B1D4E /* AppDelegate.swift */; };
 		DF52DB141F46D075005B1D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF52DB0A1F46D075005B1D4E /* Assets.xcassets */; };
 		DF52DB151F46D075005B1D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF52DB0B1F46D075005B1D4E /* LaunchScreen.storyboard */; };
-		DF52DB161F46D075005B1D4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF52DB0D1F46D075005B1D4E /* Main.storyboard */; };
-		DF52DB181F46D075005B1D4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DB121F46D075005B1D4E /* ViewController.swift */; };
+		DF52DB181F46D075005B1D4E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DB121F46D075005B1D4E /* CalendarViewController.swift */; };
 		DF52DB1B1F46DA53005B1D4E /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = DF52DB1A1F46DA53005B1D4E /* data.json */; };
 		DF52DB1D1F46DD05005B1D4E /* CelebrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DB1C1F46DD05005B1D4E /* CelebrationModel.swift */; };
 		DF52DB1F1F46DDBB005B1D4E /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DB1E1F46DDBB005B1D4E /* DayModel.swift */; };
 		DF52DB211F473C7A005B1D4E /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DB201F473C7A005B1D4E /* CalendarViewModel.swift */; };
+		DF52DB281F498DD7005B1D4E /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DB271F498DD7005B1D4E /* DayCollectionViewCell.swift */; };
+		DF52DB2A1F498EEB005B1D4E /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DB291F498EEB005B1D4E /* ApplicationCoordinator.swift */; };
+		DF52DB2C1F498FD7005B1D4E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52DB2B1F498FD7005B1D4E /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,8 @@
 		5211C5774D27F511BC99EE90 /* Pods-L1ndaTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-L1ndaTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		93B936A2BBAE6E09A470AAF4 /* Pods-L1ndaTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-L1ndaTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-L1ndaTestTests/Pods-L1ndaTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE3A7DD051EDD666487AAB8E /* Pods-L1ndaTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-L1ndaTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DF0B8FFA1F49917B00738E34 /* ViewControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerManager.swift; sourceTree = "<group>"; };
+		DF0B8FFD1F49952500738E34 /* URLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		DF52DAD61F46CD75005B1D4E /* L1ndaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L1ndaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF52DAEA1F46CD75005B1D4E /* L1ndaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L1ndaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF52DAEE1F46CD75005B1D4E /* L1ndaTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1ndaTestTests.swift; sourceTree = "<group>"; };
@@ -58,13 +64,15 @@
 		DF52DB081F46D075005B1D4E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF52DB0A1F46D075005B1D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF52DB0C1F46D075005B1D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DF52DB0E1F46D075005B1D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF52DB0F1F46D075005B1D4E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF52DB121F46D075005B1D4E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF52DB121F46D075005B1D4E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		DF52DB1A1F46DA53005B1D4E /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		DF52DB1C1F46DD05005B1D4E /* CelebrationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelebrationModel.swift; sourceTree = "<group>"; };
 		DF52DB1E1F46DDBB005B1D4E /* DayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
 		DF52DB201F473C7A005B1D4E /* CalendarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		DF52DB271F498DD7005B1D4E /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF52DB291F498EEB005B1D4E /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		DF52DB2B1F498FD7005B1D4E /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		E4894626BA0F386A0E047AC8 /* Pods-L1ndaTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-L1ndaTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-L1ndaTestUITests/Pods-L1ndaTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EFC16E23305891EA26596FE0 /* Pods_L1ndaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_L1ndaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,6 +128,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DF0B8FFC1F49950600738E34 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF0B8FFD1F49952500738E34 /* URLExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		DF52DACD1F46CD75005B1D4E = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +164,7 @@
 				DF52DB071F46D075005B1D4E /* App */,
 				DF52DB101F46D075005B1D4E /* Routing */,
 				DF52DB111F46D075005B1D4E /* Views */,
+				DF0B8FFC1F49950600738E34 /* Utils */,
 				DF52DB091F46D075005B1D4E /* Resources */,
 			);
 			path = L1ndaTest;
@@ -175,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				DF52DB081F46D075005B1D4E /* AppDelegate.swift */,
+				DF52DB291F498EEB005B1D4E /* ApplicationCoordinator.swift */,
+				DF0B8FFA1F49917B00738E34 /* ViewControllerManager.swift */,
+				DF52DB2B1F498FD7005B1D4E /* Route.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -185,7 +205,6 @@
 				DF52DB191F46DA53005B1D4E /* Files */,
 				DF52DB0A1F46D075005B1D4E /* Assets.xcassets */,
 				DF52DB0B1F46D075005B1D4E /* LaunchScreen.storyboard */,
-				DF52DB0D1F46D075005B1D4E /* Main.storyboard */,
 				DF52DB0F1F46D075005B1D4E /* Info.plist */,
 			);
 			path = Resources;
@@ -201,10 +220,11 @@
 		DF52DB111F46D075005B1D4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DF52DB121F46D075005B1D4E /* ViewController.swift */,
+				DF52DB121F46D075005B1D4E /* CalendarViewController.swift */,
 				DF52DB201F473C7A005B1D4E /* CalendarViewModel.swift */,
 				DF52DB1E1F46DDBB005B1D4E /* DayModel.swift */,
 				DF52DB1C1F46DD05005B1D4E /* CelebrationModel.swift */,
+				DF52DB271F498DD7005B1D4E /* DayCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,7 +357,6 @@
 			files = (
 				DF52DB151F46D075005B1D4E /* LaunchScreen.storyboard in Resources */,
 				DF52DB141F46D075005B1D4E /* Assets.xcassets in Resources */,
-				DF52DB161F46D075005B1D4E /* Main.storyboard in Resources */,
 				DF52DB1B1F46DA53005B1D4E /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,10 +549,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF52DB1F1F46DDBB005B1D4E /* DayModel.swift in Sources */,
-				DF52DB181F46D075005B1D4E /* ViewController.swift in Sources */,
+				DF52DB281F498DD7005B1D4E /* DayCollectionViewCell.swift in Sources */,
+				DF0B8FFB1F49917B00738E34 /* ViewControllerManager.swift in Sources */,
+				DF52DB181F46D075005B1D4E /* CalendarViewController.swift in Sources */,
 				DF52DB131F46D075005B1D4E /* AppDelegate.swift in Sources */,
+				DF0B8FFE1F49952500738E34 /* URLExtension.swift in Sources */,
 				DF52DB1D1F46DD05005B1D4E /* CelebrationModel.swift in Sources */,
+				DF52DB2C1F498FD7005B1D4E /* Route.swift in Sources */,
 				DF52DB211F473C7A005B1D4E /* CalendarViewModel.swift in Sources */,
+				DF52DB2A1F498EEB005B1D4E /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,14 +599,6 @@
 				DF52DB0C1F46D075005B1D4E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		DF52DB0D1F46D075005B1D4E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF52DB0E1F46D075005B1D4E /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -691,6 +707,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pelizcar.L1ndaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCHEME = l1ndatest;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -705,6 +722,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pelizcar.L1ndaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCHEME = l1ndatest;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

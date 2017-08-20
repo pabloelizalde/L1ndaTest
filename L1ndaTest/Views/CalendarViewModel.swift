@@ -12,7 +12,7 @@ import RxSwift
 
 struct CalendarViewModel {
 
-	// MARK: public properties
+	// MARK: - public properties
 	let calendar = Variable<[DayModel]?>(nil)
 	
 	init() {
