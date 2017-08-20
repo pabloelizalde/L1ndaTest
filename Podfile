@@ -9,6 +9,7 @@ target 'L1ndaTest' do
   pod 'Unbox'
   pod 'SwiftLint'
   pod 'RxSwift', '~> 3.4'
+  pod 'Reusable', '~> 4.0.0'
 
   target 'L1ndaTestTests' do
     inherit! :search_paths
