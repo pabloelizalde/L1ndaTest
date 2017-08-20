@@ -9,8 +9,9 @@
 import UIKit
 import Unbox
 import RxSwift
+import Reusable
 
-class CalendarViewController: UIViewController, UICollectionViewDataSource {
+class CalendarViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 	private let loader: UIActivityIndicatorView!
 	private let collectionView: UICollectionView!
@@ -18,13 +19,16 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource {
 	
 	private let disposeBag = DisposeBag()
 	
-	fileprivate let viewModel: CalendarViewModel
+	private let viewModel: CalendarViewModel
 
 	// MARK: - Lifecycle methods
 	init(viewModel: CalendarViewModel) {
 		self.viewModel = viewModel
 		self.loader = UIActivityIndicatorView()
-		self.collectionView = UICollectionView(frame: UIScreen.main.bounds, collectionViewLayout: UICollectionViewFlowLayout())
+		let layout = UICollectionViewFlowLayout()
+		layout.sectionInset = UIEdgeInsets(top: 0, left: Margins.lateral, bottom: 0, right: Margins.lateral)
+		layout.itemSize = CGSize(width: UIScreen.main.bounds.width - 2 * Margins.lateral, height: 80)
+		self.collectionView = UICollectionView(frame: UIScreen.main.bounds, collectionViewLayout: layout)
 		self.views = [loader, collectionView]
 		super.init(nibName: nil, bundle: nil)
 		
@@ -40,7 +44,7 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+		loader.startAnimating()
 		viewModel.getCalendarData()
 	}
 
@@ -52,12 +56,27 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource {
 	func setupViews() {
 		for view in views { self.view.addSubview(view) }
 		
+		view.backgroundColor = .lightGray
+		
 		collectionView.dataSource = self
+		collectionView.delegate = self
+		collectionView.register(cellType: DayCollectionViewCell.self)
+		collectionView.backgroundColor = .lightGray
 		loader.startAnimating()
 	}
 	
 	func setupContstraints() {
+		for view in views { view.translatesAutoresizingMaskIntoConstraints = false }
 		
+		NSLayoutConstraint.activate([
+			collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: Margins.top),
+			collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+			collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+			collectionView.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor),
+			
+			loader.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+			loader.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+		])
 	}
 	
 	func setupBindings() {
@@ -76,8 +95,11 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource {
 	}
 	
 	public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-		cell.backgroundColor = .red
+		let cell = collectionView.dequeueReusableCell(for: indexPath) as DayCollectionViewCell
+		let dayModel = viewModel.calendar.value?[indexPath.row]
+		if let dayString = dayModel?.date {
+			cell.set(date: dayString)
+		}
 		
 		return cell
 	}
