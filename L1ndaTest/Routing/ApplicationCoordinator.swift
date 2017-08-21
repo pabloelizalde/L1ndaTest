@@ -37,6 +37,22 @@ final class ApplicationCoordinator {
 		return true
 	}
 	
+	@discardableResult static func open(_ routeURI: RouteURI) -> URL? {
+		let uri: URL, uriComponents: URLComponents
+		switch routeURI {
+		case .celebrations(let dateString):
+			uri = URL(viewURI: Route.celebrations.rawValue)
+			uriComponents = URLComponents(path: dateString)
+		}
+		
+		guard let url = uri.build(uriComponents) else {
+			return nil
+		}
+		
+		UIApplication.shared.open(url)
+		return url
+	}
+	
 	// MARK: - Private methods
 	private func getViewController(_ routeURI: URL) -> UIViewController? {
 		if let viewController = ViewControllerManager.getViewController(viewURI: routeURI) {

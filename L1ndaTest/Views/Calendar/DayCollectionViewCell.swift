@@ -34,7 +34,7 @@ class DayCollectionViewCell: UICollectionViewCell, Reusable {
 		for view in views { view.translatesAutoresizingMaskIntoConstraints = false }
 		
 		NSLayoutConstraint.activate([
-			dateLabel.topAnchor.constraint(equalTo: topAnchor, constant: 5),
+			dateLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
 			dateLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Margins.lateral),
 			dateLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: Margins.lateral)
 		])
@@ -49,9 +49,9 @@ class DayCollectionViewCell: UICollectionViewCell, Reusable {
 	}
 	
 	// MARK: - Public Methods
-	func set(date: String) {
+	func set(date: String, weekday: String, celebrations: Int) {
 		//TODO: set attributed text with style from local file
-		dateLabel.text = date
+		dateLabel.text = "\(weekday.capitalizedFirstLetter().substring(number: 3)), \(date.getDayFromDateString()) \(date.getMontFromDateString().substring(number: 3)) Celebrations:\(celebrations)"
 	}
 
 }

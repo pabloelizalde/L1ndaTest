@@ -10,22 +10,20 @@ import Foundation
 import Unbox
 import RxSwift
 
-struct CalendarViewModel {
+struct CalendarViewModel: L1ndaViewModel {
 
 	// MARK: - public properties
 	let calendar = Variable<[DayModel]?>(nil)
 	
-	init() {
-	}
-
 	// MARK: - Public methods
 	func getCalendarData() {
 		if let path = Bundle.main.path(forResource: "data", ofType: "json") {
 			do {
 				let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
 				do {
-					let calenddr: [DayModel] = try unbox(data: data)
-					self.calendar.value = calenddr
+					let calendarData: [DayModel] = try unbox(data: data)
+					self.calendar.value = calendarData
+					DataManager.shared.saveCalendarInfo(calendar: calendarData)
 				} catch {
 					dump("Unbox error")
 				}

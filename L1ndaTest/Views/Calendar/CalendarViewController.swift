@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Unbox
 import RxSwift
 import Reusable
 
@@ -29,7 +28,7 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
 		layout.sectionInset = UIEdgeInsets(top: 0, left: Margins.lateral, bottom: 0, right: Margins.lateral)
 		layout.itemSize = CGSize(width: UIScreen.main.bounds.width - 2 * Margins.lateral, height: 80)
 		self.collectionView = UICollectionView(frame: UIScreen.main.bounds, collectionViewLayout: layout)
-		self.views = [loader, collectionView]
+		self.views = [collectionView, loader]
 		super.init(nibName: nil, bundle: nil)
 		
 		setupViews()
@@ -45,7 +44,10 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
 		super.viewDidLoad()
 
 		loader.startAnimating()
-		viewModel.getCalendarData()
+		DispatchQueue.background(delay: 3.0, completion: {
+			self.viewModel.getCalendarData()
+		})
+		
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -87,9 +89,24 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
 				self?.collectionView.reloadData()
 			}
 			.disposed(by: disposeBag)
+		
+		//TODO: Bind directly the property of the loader
+		viewModel.calendar
+			.asObservable()
+			.subscribe(onNext: { [weak self] calendar in
+				self?.loader.isHidden = (calendar != nil) ? true : false
+			})
+			.disposed(by: disposeBag)
 	}
 	
 	// MARK: - UICollectionView
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		let dayModel = viewModel.calendar.value?[indexPath.row]
+		if let dayString = dayModel?.date {
+			ApplicationCoordinator.open(.celebrations(date: dayString))
+		}
+	}
+	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return viewModel.calendar.value?.count ?? 0
 	}
@@ -97,8 +114,8 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
 	public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(for: indexPath) as DayCollectionViewCell
 		let dayModel = viewModel.calendar.value?[indexPath.row]
-		if let dayString = dayModel?.date {
-			cell.set(date: dayString)
+		if let dayString = dayModel?.date, let weekdayString = dayModel?.weekday, let celebrations = dayModel?.celebrations {
+			cell.set(date: dayString, weekday: weekdayString, celebrations: celebrations.count)
 		}
 		
 		return cell

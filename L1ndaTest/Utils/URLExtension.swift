@@ -22,3 +22,22 @@ extension URL {
 		// swiftlint:enable force_unwrapping
 	}
 }
+
+/// MARK: - URLComponents custom Init
+extension URLComponents {
+	
+	init(path: String) {
+		self.init()
+		
+		self.path = path
+	}
+}
+
+/// MARK: - URL Builder extensions based on
+/// https://github.com/anjlab/SafeURL/blob/master/Pod/Classes/SwiftURL.swift#L121
+extension URL {
+	
+	func build(_ components: URLComponents) -> URL? {
+		return components.url(relativeTo: self)?.absoluteURL
+	}
+}

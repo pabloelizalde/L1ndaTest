@@ -8,13 +8,21 @@
 
 import UIKit
 
+/// Return
+enum RouteURI {
+	case celebrations(date: String)
+}
+
 enum Route: String {
 	case calendar
+	case celebrations
 	
-	func getViewController() -> UIViewController {
+	func getViewController(pathComponents: [String]) -> UIViewController {
 		switch self {
 		case .calendar:
 			return CalendarViewController(viewModel: CalendarViewModel())
+		case .celebrations:
+			return CelebrationsViewController(viewModel: CelebrationsViewModel(date: pathComponents[1]))
 		}
 	}
 }

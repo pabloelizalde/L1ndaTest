@@ -13,7 +13,7 @@ struct ViewControllerManager {
 	
 	static func getViewController(viewURI: URL) -> UIViewController? {
 		if let host = viewURI.host, let route = Route(rawValue: host) {
-			return route.getViewController()
+			return route.getViewController(pathComponents: viewURI.pathComponents)
 		}
 		return nil
 	}
