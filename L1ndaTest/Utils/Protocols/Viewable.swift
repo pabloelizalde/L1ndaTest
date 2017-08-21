@@ -1,5 +1,5 @@
 //
-//  L1ndaViewModel.swift
+//  Viewable.swift
 //  L1ndaTest
 //
 //  Created by Pablo Elizalde Carvajal on 21/08/2017.
@@ -8,6 +8,9 @@
 
 import Foundation
 
-protocol L1ndaViewModel {
+protocol Viewable {
 	
+	func setupViews()
+	func setupContstraints()
+	func setupBindings()
 }

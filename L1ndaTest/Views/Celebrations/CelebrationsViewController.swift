@@ -10,16 +10,16 @@ import Foundation
 import UIKit
 import RxSwift
 
-class CelebrationsViewController: UIViewController {
+final class CelebrationsViewController: UIViewController, Viewable {
 	
 	static let labelHeight: CGFloat = 64
 	
 	private let stackView: UIStackView
 	private let views: [UIView]
 	
-	private let viewModel: CelebrationsViewModel
-	
 	private let disposeBag = DisposeBag()
+	
+	private let viewModel: CelebrationsViewModel
 	
 	// MARK: - Lifecycle methods
 	init(viewModel: CelebrationsViewModel) {
@@ -53,7 +53,7 @@ class CelebrationsViewController: UIViewController {
 		stackView.axis = .vertical
 		stackView.layoutMargins = UIEdgeInsets(top: Margins.top, left: 0, bottom: 0, right: 0)
 		stackView.isLayoutMarginsRelativeArrangement = true
-		stackView.spacing = 10
+		stackView.spacing = Margins.spacing
 		self.view.backgroundColor = .lightGray
 		
 		guard let celebrations = viewModel.celebrations.value else {
@@ -61,7 +61,7 @@ class CelebrationsViewController: UIViewController {
 		}
 		for celebration in celebrations {
 			let label = UILabel()
-			label.text = celebration.rank
+			label.text = "\(celebration.title), \(celebration.rank)"
 			label.backgroundColor = celebration.colour.getColorFromString()
 			stackView.addArrangedSubview(label)
 		}
@@ -76,8 +76,7 @@ class CelebrationsViewController: UIViewController {
 		
 		for subview in stackView.subviews {
 			NSLayoutConstraint.activate([
-				subview.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Margins.lateral),
-				view.trailingAnchor.constraint(equalTo: subview.trailingAnchor, constant: Margins.lateral),
+				subview.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
 				subview.heightAnchor.constraint(equalToConstant: CelebrationsViewController.labelHeight)
 			])
 		}

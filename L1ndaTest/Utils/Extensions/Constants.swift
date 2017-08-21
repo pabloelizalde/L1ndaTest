@@ -12,5 +12,6 @@ struct Margins {
 	
 	static let lateral: CGFloat = 10
 	static let top: CGFloat = 30
+	static let spacing: CGFloat = 10
 
 }

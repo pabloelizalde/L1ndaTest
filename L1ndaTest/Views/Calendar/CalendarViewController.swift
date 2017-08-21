@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import Reusable
 
-class CalendarViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+final class CalendarViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, Viewable {
 
 	private let loader: UIActivityIndicatorView!
 	private let collectionView: UICollectionView!

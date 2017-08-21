@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-struct CelebrationsViewModel: L1ndaViewModel {
+struct CelebrationsViewModel {
 
 	let celebrations = Variable<[CelebrationModel]?>(nil)
 	

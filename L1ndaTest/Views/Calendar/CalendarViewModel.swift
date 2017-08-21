@@ -10,7 +10,7 @@ import Foundation
 import Unbox
 import RxSwift
 
-struct CalendarViewModel: L1ndaViewModel {
+struct CalendarViewModel {
 
 	// MARK: - public properties
 	let calendar = Variable<[DayModel]?>(nil)
