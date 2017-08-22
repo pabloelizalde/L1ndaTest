@@ -9,10 +9,15 @@ To run the app you will need:
 * iOS 10.3
 
 ## How to run the code
-1. Go to the main folder.
-2. Run `pod install`. If you do not have Cocoapods install, go [here](https://cocoapods.org/).
-3. Open the `.xcworkspace` that has been generated with Xcode.
-4. Run the app!
+1. Clone the repository:
+```
+$ git clone https://github.com/Suitsupply/Vandura.git
+```
+
+2. Go to the main folder.
+3. Run `pod install`. If you do not have Cocoapods install, go [here](https://cocoapods.org/).
+4. Open the `.xcworkspace` that has been generated with Xcode.
+5. Run the app!
 
 ## Libraries used
 
@@ -22,4 +27,13 @@ To run the app you will need:
 * [Reusable](https://github.com/AliSoftware/Reusable): used to facilite the reuse of cell in a collection view.
 * [Nimble](https://github.com/Quick/Nimble) and [Quick](https://github.com/Quick/Quick): testing framework.
 
+## Unit test
+
+For unit testing Quick and Nimble frameworks have been used. I have created unit test till the code coverage was above 80%
+
 ## Improvements
+* Create a network call to retreive the calendar data.
+* Improve binding between view properties and data.
+* Increment unit test to full cover the code.
+* Create style sheet.
+* Include [Danger](https://github.com/danger/danger) to automate taks.
