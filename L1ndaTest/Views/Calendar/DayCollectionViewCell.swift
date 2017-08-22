@@ -52,7 +52,7 @@ class DayCollectionViewCell: UICollectionViewCell, Reusable {
 	func set(date: String, weekday: String, celebrations: Int) {
 		//TODO: set attributed text with style from local file
 		dateLabel.text = "\(weekday.capitalizedFirstLetter().substring(number: 3)), \(date.getDayFromDateString()) " +
-			"\(date.getMontFromDateString().substring(number: 3)) Celebrations: \(celebrations)"
+			"\(date.getMonthFromDateString().substring(number: 3)) Celebrations: \(celebrations)"
 	}
 
 }

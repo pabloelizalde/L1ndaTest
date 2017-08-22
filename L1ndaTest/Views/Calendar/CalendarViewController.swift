@@ -44,10 +44,9 @@ final class CalendarViewController: UIViewController, UICollectionViewDataSource
 		super.viewDidLoad()
 
 		loader.startAnimating()
-		DispatchQueue.background(delay: 3.0, completion: {
+		DispatchQueue.background(delay: 1.0, completion: {
 			self.viewModel.getCalendarData()
 		})
-		
 	}
 
 	override func didReceiveMemoryWarning() {

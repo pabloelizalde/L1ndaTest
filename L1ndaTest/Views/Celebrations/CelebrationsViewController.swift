@@ -51,7 +51,7 @@ final class CelebrationsViewController: UIViewController, Viewable {
 		for view in views { self.view.addSubview(view) }
 		
 		stackView.axis = .vertical
-		stackView.layoutMargins = UIEdgeInsets(top: Margins.top, left: 0, bottom: 0, right: 0)
+		stackView.layoutMargins = UIEdgeInsets(top: Margins.top, left: Margins.lateral, bottom: 0, right: Margins.lateral)
 		stackView.isLayoutMarginsRelativeArrangement = true
 		stackView.spacing = Margins.spacing
 		self.view.backgroundColor = .lightGray
@@ -61,7 +61,7 @@ final class CelebrationsViewController: UIViewController, Viewable {
 		}
 		for celebration in celebrations {
 			let label = UILabel()
-			label.text = "\(celebration.title), \(celebration.rank)"
+			label.text = celebration.title != "" ? "\(celebration.title), \(celebration.rank)" : celebration.rank
 			label.backgroundColor = celebration.colour.getColorFromString()
 			stackView.addArrangedSubview(label)
 		}
@@ -76,7 +76,6 @@ final class CelebrationsViewController: UIViewController, Viewable {
 		
 		for subview in stackView.subviews {
 			NSLayoutConstraint.activate([
-				subview.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width),
 				subview.heightAnchor.constraint(equalToConstant: CelebrationsViewController.labelHeight)
 			])
 		}

@@ -17,20 +17,13 @@ struct CalendarViewModel {
 	
 	// MARK: - Public methods
 	func getCalendarData() {
-		if let path = Bundle.main.path(forResource: "data", ofType: "json") {
-			do {
-				let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
-				do {
-					let calendarData: [DayModel] = try unbox(data: data)
-					self.calendar.value = calendarData
-					DataManager.shared.saveCalendarInfo(calendar: calendarData)
-				} catch {
-					dump("Unbox error")
-				}
-			} catch let error {
-				dump(error.localizedDescription)
-			}
+		let data = Data.fromResource("data", ofType: "json")
+		do {
+			let calendarData: [DayModel] = try unbox(data: data)
+			self.calendar.value = calendarData
+			DataManager.shared.saveCalendarInfo(calendar: calendarData)
+		} catch {
+			dump("Unbox error")
 		}
 	}
-
 }

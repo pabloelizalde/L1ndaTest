@@ -37,7 +37,7 @@ extension String {
 		return String(Calendar.current.component(.day, from: date))
 	}
 	
-	func getMontFromDateString() -> String {
+	func getMonthFromDateString() -> String {
 		guard let date = getDateFromString() else {
 			return ""
 		}
@@ -56,5 +56,11 @@ extension String {
 		default:
 			return UIColor.purple
 		}
+	}
+	
+	var utf8Encoded: Data {
+		// swiftlint:disable force_unwrapping
+		return self.data(using: .utf8)!
+		// swiftlint:enable force_unwrapping
 	}
 }

@@ -18,6 +18,7 @@ final class DataManager {
 	
 	private var calendar: [DayModel]?
 	
+	// MARK: - Public methods
 	func saveCalendarInfo(calendar: [DayModel]) {
 		self.calendar = calendar
 	}
@@ -30,4 +31,5 @@ final class DataManager {
 			.first
 			.map { $0.celebrations }
 	}
+	
 }
